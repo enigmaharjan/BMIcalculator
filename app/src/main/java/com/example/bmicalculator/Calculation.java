@@ -2,7 +2,9 @@ package com.example.bmicalculator;
 
 public class Calculation {
 
-    private Double BMI, height, weight;
+    private float BMI;
+    private Double height;
+    private Double weight;
 
     public Double getHeight() {
         return height;
@@ -21,9 +23,10 @@ public class Calculation {
         this.weight = weight;
     }
 
-    public Double calculate() {
-        BMI = weight / (height*height);
-        return BMI;
+    public float calculate() {
+        BMI = (float) (weight / (height*height));
+        float a = BMI;
+        return  BMI;
     }
 
 

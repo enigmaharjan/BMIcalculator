@@ -55,9 +55,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
                 cal.setWeight(weight);
                 cal.setHeight(height);
-//            cal.setHeight(Double.parseDouble(etHeight.getText().toString()));
-//            cal.setHeight(Double.parseDouble(etHeight.getText().toString()));
-                tvBMIresult.setText(Double.toString(cal.calculate()));
+                tvBMIresult.setText(Float.toString(cal.calculate()));
                 double res = cal.calculate();
                 if (res < 18.5) {
                     Toast.makeText(MainActivity.this, "You are Underweight", Toast.LENGTH_LONG).show();
